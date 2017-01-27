@@ -40,7 +40,16 @@
 
 // Write the function definitions which will make the following function invocations function properly.
 
-  //Function Invocations Here
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.move = 0;
+  this.moveCar = function(){
+   return this.move += 10;
+    }
+ }
+
 
 var prius = new Car('Toyota', 'Prius', 2011);
 var mustang = new Car('Ford', 'Mustang', 2013);
